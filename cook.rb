@@ -11,7 +11,7 @@ load './cookbook.rb'
 
 # Tests the Code
 
-mex_cuisine = Cookbook.new("Torches")
+mex_cuisine = Cookbook.new("Mexican Awesome Food")
 
 burrito = Recipe.new("Bean and Cheese", ["tortilla chips","Salsa"], ["Do this, then this, then That"])
 chips_n_salsa = Recipe.new("Chips and Salsa", ["Chips", "Salsa"], "Pour some salsa in a bowl")
@@ -23,5 +23,4 @@ puts chips_n_salsa
 mex_cuisine.add_recipe(burrito)
 mex_cuisine.add_recipe(chips_n_salsa)
 
-puts mex_cuisine.recipes
-#end	
+puts mex_cuisine

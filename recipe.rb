@@ -11,13 +11,10 @@ class Recipe
 			@steps = steps
 		end
 
-		#getter Method
-		#def title
-		#	@title
-		end
-
-		#setter method
-		def title = (new_title)
-			@title = new_title
+		def to_s
+			"Recipe: #{title} \n
+			Ingredients: #{ingredients} \n
+			Steps: #{steps}"
+		end	
 end
 

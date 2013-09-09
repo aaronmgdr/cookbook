@@ -1,14 +1,15 @@
 
 class Cookbook
-	attr_accessor :cookbook_title
+	attr_accessor :cookbook_title, :recipes
+
 
 		def initialize(cookbook_title)
-				@recipes = []
-				@cookbook_title = cookbook_title
+			@cookbook_title = cookbook_title
+			@recipes = []
 		end
 
 		#should add a recipe to array with syntax Cookbook.add_recipe(RecipeName)
-		def add_recipe (single_recipe)
+		def add_recipe(single_recipe)
 				
 				@recipes << single_recipe.to_s
 		end
@@ -17,4 +18,14 @@ class Cookbook
 		# def recipes
 		# 	@recipes
 		# end
+
+		def to_s
+			"I am a String"
+		end
+
+		def list
+		end
 end
+
+
+
