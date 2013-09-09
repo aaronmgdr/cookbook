@@ -1,6 +1,8 @@
 
 class Cookbook
-	attr_accessor :this :that
-		def initialize
+	attr_accessor :recipe
+		def initialize(recipe)
+				@recipe = recipe
 		end
+
 end

@@ -1,9 +1,13 @@
 
 
 class Recipe
-	attr_accessor :
+	attr_accessor :title
+	attr_accessor :ingredients
 
-		def initialize (title, *ingredients, *steps)
+		def initialize(title, ingredients, steps)
+			@title = title
+			@ingredients = ingredients
+			@steps = steps
 		end
 end
 
