@@ -11,7 +11,7 @@ class Cookbook
 		#should add a recipe to array with syntax Cookbook.add_recipe(RecipeName)
 		def add_recipe(single_recipe)
 				
-				@recipes << single_recipe.to_s
+				@recipes << single_recipe
 		end
 
 		# #getter method ;should give array of all recipes
@@ -24,6 +24,7 @@ class Cookbook
 		end
 
 		def list
+			put
 		end
 end
 
